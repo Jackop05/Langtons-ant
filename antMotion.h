@@ -1,4 +1,3 @@
-// Typedef nalezy umiescic pozniej w pliku naglowkowym
 typedef struct Mrowka {
     int x;
     int y;
