@@ -4,10 +4,8 @@
 
 
 
-// Funckja przuwa mrowke w podanym kierunku o jedno pole 
-// oraz zmienia pole, na ktorym stala przed przesunieciem, na odwrotny kolor
+// Funckja porusza mrowke w podanym kierunku o jedno pole oraz zmienia pole, na ktorym stala przed przesunieciem, na odwrotny kolor
 void moveAnt(type_mrowka mrowka, int currentDirection, int **map, int width, int height){
-    //printf("antX: %d, antY: %d, direction: %d\n", mrowka->x, mrowka->y, currentDirection);
     
     // Zmienne pomocnicze
     int moveX = 0;
@@ -32,7 +30,7 @@ void moveAnt(type_mrowka mrowka, int currentDirection, int **map, int width, int
     }
 
     // Sprawdzenie czy ruch jest mozliwy 
-    // ( jesli nir ==> mrowka zostala juz obrocona a algorytm sie nie wykona wiec pozostanie ona na tym samym polu )  
+    // ( jesli nie ==> mrowka zostala juz obrocona a algorytm sie nie wykona wiec pozostanie ona na tym samym polu )  
     if(mrowka->x + moveX >= 0 && mrowka->x + moveX <= width-1 && mrowka->y + moveY >= 0 && mrowka->y + moveY <= height-1){
         // Zmiana nowego pola na inny kolor
         if(map[mrowka->x][mrowka->y] == 1){

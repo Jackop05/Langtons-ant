@@ -4,8 +4,8 @@
 #include "antMotion.h"
 
 
-
-// example run:   ./langtons_ant.exe 100 100 100000 file 0 
+// Przed uruchomieniem na windows nalezy wpisac komendę "chcp 65001"
+// Przykład uzycia:   ./langtons_ant.exe 100 100 100000 file 0 
 
 // Funkcja main()                 
 int main(int argc, char **argv){
@@ -20,27 +20,10 @@ int main(int argc, char **argv){
     int currentDirection;                   // {0 , 1 , 2 , 3} gdzie 0 to gora a reszta liczb odpowiada kierunkom idacym zgodnie ze wskazowkami zegara
     int **starterMap = NULL;
 
-    // argv: 0.nazwa 1.liczba_wierszy 2.liczba_kolumn 3.liczba_iteracji 4.przedrostek_plikow 
-    // 5.poczatkowy_kierunek 6.plik_wczytana_mapa 7.czy_generowaclosowa__mape
-    if(argc < 6 || argc > 8){
+    // argv: 0.nazwa 1.liczba_wierszy 2.liczba_kolumn 3.liczba_iteracji 4.przedrostek_plikow 5.poczatkowy_kierunek
+    if(argc > 6){
         printf("Zla liczba argumentow!\n");
         return 1;
-
-    } else if(argc == 7 && argc != 8){
-        if(atoi(argv[6]) == 0){
-            printf("Jesli plik ma byc odczytany, argument 7 musi byc nazwa pliku do odczytania\n");
-            return 1;
-        }
-        starterMap ;                        // = readFile(argv[6])
-
-    } else if(argc == 8){
-        if(atoi(argv[6]) != 0){
-            printf("Jesli mapa ma byc wygenerowana losowo, parametr 6 musi byc rowny 0\n");
-            return 1;
-        }
-        if(atoi(argv[7]) == 1){
-            starterMap ;                    // = generateRandomMap();
-        }
     } 
 
     // Przypisanie pozostalych zmiennych wejsciowych
@@ -112,5 +95,4 @@ int main(int argc, char **argv){
         printf("─");
     }
     printf("\n");
-
 }
