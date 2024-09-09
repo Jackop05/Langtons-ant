@@ -22,7 +22,7 @@ The program reads the grid dimensions, number of iterations, and the ant's start
 1. Compile the program:
    ```bash
    gcc -o langtons_ant main.c antMotion.c
-2. Use command to set active character coding:
+2. Use command to set character coding:
    ```bash
    chcp 65001
 3. To run the program, use the following command:
@@ -31,7 +31,7 @@ The program reads the grid dimensions, number of iterations, and the ant's start
 Where:
 - `<rows>`: Number of rows of the grid (e.g., 100)
 - `<cols>`: Number of columns of the grid (e.g., 100)
-- `<iterations>`: Number of iterations (Recomended more than 10 thousant, for example 1000000)
+- `<iterations>`: Number of iterations (Recomended more than 10 thousant, for example 100000)
 - `<file_prefix>`: Prefix for the output files (currently not used)
 - `<starting_direction>`: Initial direction of the ant (0: up, 1: right, 2: down, 3: left)
 **Warning** - you might want to zoom out using ``ctrl`` + ``-`` to see whole simulation.
