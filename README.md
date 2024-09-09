@@ -20,7 +20,8 @@ The program reads the grid dimensions, number of iterations, and the ant's start
    ```bash
    gcc -o langtons_ant main.c antMotion.c
 2. To run the program, use the following command:
-  ./langtons_ant <rows> <cols> <iterations> <file_prefix> <starting_direction>
+   ```bash
+   ./langtons_ant <rows> <cols> <iterations> <file_prefix> <starting_direction>
 Where:
 - `<rows>`: Number of rows of the grid (e.g., 10000)
 - `<cols>`: Number of columns of the grid (e.g., 10000)
