@@ -5,6 +5,9 @@ This C program simulates **Langton's Ant**, a two-dimensional universal Turing m
 
 The program reads the grid dimensions, number of iterations, and the ant's starting direction from command-line arguments. It prints the resulting grid after the specified number of iterations.
 
+![image](https://github.com/user-attachments/assets/6b484e24-d481-4867-a3fd-76e75fd823fc)
+
+
 ## 💡 Features
 - **Ant Movement**: The ant moves based on grid color and changes direction accordingly.
 - **Grid Generation**: Creates an `m x n` grid where each cell can either be black (1) or white (0).
