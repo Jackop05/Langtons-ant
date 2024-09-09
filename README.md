@@ -15,44 +15,21 @@ The program reads the grid dimensions, number of iterations, and the ant's start
 - **`main.c`**: The main program file that initializes the grid, simulates the ant's movement, and prints the final grid.
 - **`antMotion.h`**: Header file that contains the function prototypes for moving the ant.
 
-## 💻 Compilation
-To compile the program, use the following command:
-\`\`\`bash
-gcc -o langtons_ant main.c antMotion.c
-\`\`\`
-
 ## 🔨 Usage
-To run the program, use the following command:
-\`\`\`bash
-./langtons_ant <rows> <cols> <iterations> <file_prefix> <starting_direction>
-\`\`\`
-
+1. Compile the program:
+   ```bash
+   gcc -o langtons_ant main.c antMotion.c
+2. To run the program, use the following command:
+  ./langtons_ant <rows> <cols> <iterations> <file_prefix> <starting_direction>
 Where:
-- `<rows>`: Number of rows in the grid (e.g., 100)
-- `<cols>`: Number of columns in the grid (e.g., 100)
-- `<iterations>`: Number of iterations (e.g., 100000)
+- `<rows>`: Number of rows of the grid (e.g., 10000)
+- `<cols>`: Number of columns of the grid (e.g., 10000)
+- `<iterations>`: Number of iterations (Recomended more than 10 thousant for egzample 1000000)
 - `<file_prefix>`: Prefix for the output files (currently not used)
 - `<starting_direction>`: Initial direction of the ant (0: up, 1: right, 2: down, 3: left)
 
-### Example Usage:
-\`\`\`bash
-./langtons_ant 100 100 100000 file 0
-\`\`\`
-This will simulate the ant on a 100x100 grid for 100,000 iterations, starting in the upward direction (0).
-
 ## 📋 Output
 The program prints a visual representation of the grid after the specified iterations. White cells are represented by spaces, and black cells are represented by `██`. The grid is surrounded by ASCII box-drawing characters to give it a neat appearance.
-
-### Example Grid Output:
-\`\`\`bash
-──────────────────────
-│                    │
-│  ██  ██            │
-│      ██  ██  ██    │
-│  ██      ██        │
-│  ██  ██            │
-──────────────────────
-\`\`\`
 
 ## 🙋‍♂️ Authors
 - **Jakub Sztobryn** ~ Warsaw University of Technology student
